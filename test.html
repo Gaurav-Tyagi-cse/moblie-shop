@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Verification</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 600px;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .photo {
+            margin-bottom: 20px;
+        }
+
+        .photo img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #ddd;
+        }
+
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        .table tr {
+            text-align: start;
+        }
+
+        .table td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+
+        .table td:nth-child(1) {
+            font-weight: bold;
+            background-color: #f7f7f7;
+            width: 40%;
+        }
+
+        .verified {
+            text-align: center;
+            color: green;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        @media (max-width: 480px) {
+            .photo img {
+                width: 90px;
+                height: 90px;
+            }
+
+            .table td {
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="photo">
+            <img src="https://via.placeholder.com/120" alt="Student Photo">
+        </div>
+        <table class="table">
+            <tr>
+                <td>REGISTRATION NO.</td>
+                <td>UP/010017/2</td>
+            </tr>
+            <tr>
+                <td>STUDENT'S NAME</td>
+                <td>SAMY UL HAQ</td>
+            </tr>
+            <tr>
+                <td>DATE OF BIRTH</td>
+                <td>10-08-1989</td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>Male</td>
+            </tr>
+            <tr>
+                <td>FATHER NAME</td>
+                <td>NAEEM UL HAQ</td>
+            </tr>
+            <tr>
+                <td>COURSE NAME</td>
+                <td>ADVANCE DIPLOMA IN COMPUTER APPLICATION</td>
+            </tr>
+            <tr>
+                <td>COURSE CODE</td>
+                <td>(ADCA) (12 MONTH)</td>
+            </tr>
+            <tr>
+                <td>COURSE DURATION</td>
+                <td>12 Months</td>
+            </tr>
+            <tr>
+                <td>STUDY CENTRE NAME</td>
+                <td>JMD ITM</td>
+            </tr>
+            <tr>
+                <td>STUDY CENTRE CODE</td>
+                <td>UP/01017</td>
+            </tr>
+            <tr>
+                <td>STUDY CENTRE ADDRESS</td>
+                <td>Mavassal petch kosi kalan</td>
+            </tr>
+        </table>
+        <div class="verified">STUDENT VERIFIED SUCCESSFULLY</div>
+    </div>
+</body>
+
+</html>
